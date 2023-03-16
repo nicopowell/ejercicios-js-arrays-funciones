@@ -10,9 +10,10 @@ for (let i = 0; i < 50; i++) {
     sumas[suma - 2]++;
 }
 
-document.write("<h1>Sumas de dados</h1>");
-document.write("<ul>");
+document.write(
+    "<table><thead><tr><th>Suma🎲🎲</th><th>Apariciones</th></tr></thead><tbody>"
+);
 for (let i = 0; i < sumas.length; i++) {
-    document.write(`<li>La suma ${i + 2} apareció ${sumas[i]} veces.</li>`);
+    document.write(`<tr><td>${i + 2}</td><td>${sumas[i]}</td></tr>`);
 }
-document.write("</ul>");
+document.write("</tbody></table>");
